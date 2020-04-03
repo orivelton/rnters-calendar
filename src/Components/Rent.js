@@ -1,4 +1,5 @@
 import React from 'react';
+import Calendar from './Calendar';
 
 const Rent = () => {
   return(
@@ -39,14 +40,8 @@ const Rent = () => {
 
             <div className="panel-body text-center">
               
-              <p>
-                Insert calendar here.
-              </p>
-                              <p>
-  Recommendation: Prioritize the user experience.
-              </p>
+              <Calendar />
               <div className="items__quick_booking_container">
-                
                 <button className="btn btn-primary">Default button</button>
               </div>
             </div>

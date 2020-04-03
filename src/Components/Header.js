@@ -4,9 +4,9 @@ import '../index.scss';
 const Header = () => {
   return (
     <>
-      <div class="loader-wrapper">
-        <div class="container cn">
-          <i class="far fa-compass fa-spin fa-3x fa-fw"></i>
+      <div className="loader-wrapper">
+        <div className="container cn">
+          <i className="far fa-compass fa-spin fa-3x fa-fw"></i>
         </div>
       </div>
       <nav className="navbar navbar-fixed-top ">

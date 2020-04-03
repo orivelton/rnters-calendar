@@ -4,8 +4,8 @@ import Rent from './Rent';
 
 const Content = () => {
   return (
-    <div class="item__detail item__detail_long">
-      <div class="row item_page_row">
+    <div className="item__detail item__detail_long">
+      <div className="row item_page_row">
         <Card />
         <Rent />
       </div>
