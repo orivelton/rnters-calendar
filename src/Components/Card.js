@@ -25,7 +25,7 @@ const Card = () => {
             </div>
           </div>
         </div>
-        <div className="row" style={{padding: '0px 20px'}}>
+        <div className="row text-left" style={{padding: '0px 20px'}}>
           <div className="col-xs-12">
             <div className="col-xs-10">
               <h1 id="item_title"><b>Item Name</b></h1>
@@ -37,7 +37,7 @@ const Card = () => {
           </div>
         </div>
 
-        <div className="row" style={{padding: '0px 20px 40px 20px'}}>
+        <div className="row text-left" style={{padding: '0px 20px 40px 20px'}}>
           <div className="col-xs-12">
             Weight unstrung 300 g
             Technology Cortex Pure Feel, FSI Power, GT Technology, Elliptic Beam
