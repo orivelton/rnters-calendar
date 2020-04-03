@@ -1,24 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useState } from 'react';
+import './App.scss';
+import apiGet from './api/api';
 
-function App() {
+const App = () => {
+  const [calendar, setCalendar] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const result = await apiGet();
+      const {data: { attributes }} = result;
+      setCalendar(attributes);
+    };
+
+    fetchData();
+  }, []);
+
+  const { available_periods, confirmed_inquiries, unavailable_periods } = calendar;
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="calendar">
+      <h1>Calendar</h1>
+      {console.log('>>>>>', calendar)}
+      {calendar.length && console.log('>>>>>>>', available_periods)}
     </div>
   );
 }
