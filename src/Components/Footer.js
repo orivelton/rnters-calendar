@@ -3,7 +3,7 @@ import React from 'react';
 
 const Footer = () => {
   return(
-    <footer className="not_visible_mobile">
+    <footer className="not_visible_mobile text-left">
       <div className="container-fluid">
         <div className="row">
           <div className="col-sm-4 footer_section">
@@ -20,7 +20,7 @@ const Footer = () => {
               method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden"
                 name="authenticity_token"
                 value="pj0JuSmlvEehsiycv4Jpmnz80EhkXOAtf5B+F5W1lYna7Q+AH57LBflwQ59FpaNSm+qyQGVYlpyO3eWhoP5dlw==" />
-              <div className="row">
+              <div className="row" style={{ marginBottom: '10px' }}>
                 <div className="col-xs-6">
                   <input placeholder="O teu email" className="form-control" required="required" type="email" name="[email]"
                     id="_email" />
@@ -40,6 +40,7 @@ const Footer = () => {
             <div className="row">
               <div className="col-sm-2">
                 <img
+                  style={{height: '50px'}}
                   src="https://d3urocn5qjrv7i.cloudfront.net/assets/logo_brand_primary-576ad0b1b49e8bde9dd8c6ffa1ae8384c65f3fb696589c69897463951fcab743.png"
                   alt="Logo brand primary" />
               </div>
