@@ -13,7 +13,7 @@ const Rent = () => {
                   <a href="/pt/profile/9194">
                     <img style={{width: '100%', height: 'auto', minWidth: '50px', minHeight: '50px'}}
                       src="https://dc3h9n0uz6yfs.cloudfront.net/users/avatars/000/009/194/thumb_medium/picture?1583404198"
-                      alt="Picture?1583404198" />
+                      alt="Picture?1583404198"/>
                   </a>
                 </div>
               </div>
