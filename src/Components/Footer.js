@@ -15,7 +15,7 @@ const Footer = () => {
           <div className="col-sm-4 footer_section text-left">
             <p><b>CONNECT</b></p>
             <p className="footer__subscribe_text">Não percas as novidades!</p>
-            <form className="footer__subscribe_form form-inline" action="/pt/subscribe_newsletter" accept-charset="UTF-8"
+            <form className="footer__subscribe_form form-inline" action="/pt/subscribe_newsletter"
               method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden"
                 name="authenticity_token"
                 value="pj0JuSmlvEehsiycv4Jpmnz80EhkXOAtf5B+F5W1lYna7Q+AH57LBflwQ59FpaNSm+qyQGVYlpyO3eWhoP5dlw==" />

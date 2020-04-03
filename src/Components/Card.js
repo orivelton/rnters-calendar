@@ -9,11 +9,11 @@ const Card = () => {
             <div id="carousel-1960" className="carousel items__page_carousel cn  slide item__carousel"
               data-ride="carousel" data-interval="false">
               <div className="carousel-caption">
-                <p>
-                  <div className="item__tag_label">
+                <div>
+                  <p className="item__tag_label">
                     <a href="/pt/items/search?q=Desporto">Desporto</a>
-                  </div>
-                </p>
+                  </p>
+                </div>
               </div>
               <div className="carousel-inner">
                 <div className="item active">

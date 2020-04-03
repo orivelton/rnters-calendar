@@ -31,7 +31,7 @@ const Header = () => {
               <li className="btn_navbar not_visible_mobile_lg">
                 <div className="dropdown">
                   <a 
-                    href
+                    href="/"
                     aria-expanded="false" aria-haspopup="true" role="button" data-toggle="dropdown"
                     className="dropdown-toggle">
                     <span>Saber mais</span> <span className="caret"></span>
@@ -64,7 +64,7 @@ const Header = () => {
               <li className="btn_navbar not_visible_mobile_lg">
                 <div className="dropdown">
                   <a
-                    href 
+                    href="/"
                     aria-expanded="false" aria-haspopup="true" role="button" data-toggle="dropdown"
                     className="dropdown-toggle">
                     <span>pt</span> <span className="caret"></span>
