@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import './App.scss';
 import apiGet from './api/api';
+import Header from './Components/Header';
+import Footer from './Components/Footer';
+import Content from './Components/Content';
 
 const App = () => {
   const [calendar, setCalendar] = useState([]);
@@ -14,14 +17,12 @@ const App = () => {
 
     fetchData();
   }, []);
-
-  const { available_periods, confirmed_inquiries, unavailable_periods } = calendar;
   
   return (
-    <div className="calendar">
-      <h1>Calendar</h1>
-      {console.log('>>>>>', calendar)}
-      {calendar.length && console.log('>>>>>>>', available_periods)}
+    <div className="App">
+      <Header />
+      <Content />
+      <Footer />
     </div>
   );
 }
