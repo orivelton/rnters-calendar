@@ -20,6 +20,7 @@ const Calendar = () => {
       }}
       focusedInput={focusedInput}
       onFocusChange={focusedInput => setFocusedInput(focusedInput)}
+      className='date-piker'
     />
   )
 };
