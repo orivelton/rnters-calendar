@@ -30,7 +30,9 @@ const Header = () => {
                   href="/pt/pages/make_money">Adicionar artigos</a></li>
               <li className="btn_navbar not_visible_mobile_lg">
                 <div className="dropdown">
-                  <a aria-expanded="false" aria-haspopup="true" role="button" data-toggle="dropdown"
+                  <a 
+                    href
+                    aria-expanded="false" aria-haspopup="true" role="button" data-toggle="dropdown"
                     className="dropdown-toggle">
                     <span>Saber mais</span> <span className="caret"></span>
                   </a>
@@ -61,7 +63,9 @@ const Header = () => {
               </li>
               <li className="btn_navbar not_visible_mobile_lg">
                 <div className="dropdown">
-                  <a aria-expanded="false" aria-haspopup="true" role="button" data-toggle="dropdown"
+                  <a
+                    href 
+                    aria-expanded="false" aria-haspopup="true" role="button" data-toggle="dropdown"
                     className="dropdown-toggle">
                     <span>pt</span> <span className="caret"></span>
                   </a>
@@ -75,11 +79,16 @@ const Header = () => {
                   </ul>
                 </div>
               </li>
-              <li className="btn_navbar only_visible_mobile_lg"><a data-turbolinks="false"
-                  href="/pt/items/1960-porto-portugal-alugar-babolat-pure-drive-raquete-tenis?change_locale=true">Português</a>
+              <li className="btn_navbar only_visible_mobile_lg">
+                <a data-turbolinks="false" href="/pt/items/1960-porto-portugal-alugar-babolat-pure-drive-raquete-tenis?change_locale=true">Português</a>
               </li>
-              <li className="btn_navbar only_visible_mobile_lg"><a data-turbolinks="false"
-                  href="/en/items/1960-porto-portugal-alugar-babolat-pure-drive-raquete-tenis?change_locale=true">English</a>
+              <li className="btn_navbar only_visible_mobile_lg">
+                <a 
+                  data-turbolinks="false" 
+                  href="/en/items/1960-porto-portugal-alugar-babolat-pure-drive-raquete-tenis?change_locale=true"
+                >
+                  English
+                </a>
               </li>
 
             </ul>

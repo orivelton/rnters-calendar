@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 const Footer = () => {
   return(
     <footer className="not_visible_mobile text-left">
@@ -64,4 +63,4 @@ const Footer = () => {
   )
 }
 
-export default Footer
+export default Footer;
