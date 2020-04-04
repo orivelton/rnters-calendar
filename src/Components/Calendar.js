@@ -4,7 +4,7 @@ import 'react-dates/lib/css/_datepicker.css';
 import { DateRangePicker } from 'react-dates';
 import DateFormated from './DateFormated';
 import apiGet from '../api/api';
-import moment from 'moment';
+import formatDate from '../helpers/formatDate';
 
 const Calendar = () => {
   const [startDate, setStartDate] = useState(null);
@@ -23,10 +23,25 @@ const Calendar = () => {
    }, []);
 
    const isDayBlocked = day => {
-     const { unavailable_periods: unavailableDays } = calendar
-      console.log(unavailableDays);
-      return unavailableDays.some((unavailableDay) => moment(unavailableDay).isSame(day, 'day'));
-      //return unavailablePeriods.some(date.)
+    const dayCalendar = formatDate(day);
+    const { unavailable_periods: unavailableDays } = calendar;
+    const [...a] = unavailableDays;
+
+    const result = a[0].filter((item) => {
+      const itemDate = formatDate(item);
+      if(itemDate === dayCalendar) {
+        return item;
+      }
+    });
+    console.log('>>>>>', dayCalendar)
+    
+    if(dayCalendar === '14/04/2020') {
+      console.log('Ok');
+      return true;
+    }
+
+    return false;
+    
    }
 
 
