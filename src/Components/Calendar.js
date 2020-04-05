@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import moment from 'moment';
 import 'react-dates/initialize';
 import 'react-dates/lib/css/_datepicker.css';
 import { DateRangePicker } from 'react-dates';
 import ErrorMessage from './ErrorMessage';
-import { formatDate, checkUnavailableDays } from '../helpers/formatDate';
+import { hasBlockedInTheRange, checkAvailableDays } from '../helpers/checkDays';
 import apiGet from '../api/api';
 import updateLocale from '../helpers/updateLocale';
 
@@ -26,27 +25,18 @@ const Calendar = () => {
      fetchData();
    }, []);
 
-   const isDayBlocked = day => {
-    const dayCalendar = formatDate(day);
-    const { unavailable_periods: unavailableDays } = calendar;
+  const isDayBlocked = day => {
+    const { 
+      unavailable_periods: unavailableDays,
+      available_periods: availablePeriods 
+    } = calendar;
 
-    return checkUnavailableDays(unavailableDays, dayCalendar);
+    return checkAvailableDays(availablePeriods, day);
   }
 
-  const hasBlockedInTheRange = (start, end) => {
-    const dateFormat = 'DD/MM/YYYY';
-    const diff = moment(end).diff(start, 'days') + 1;
-    const { unavailable_periods: unavailableDays } = calendar;
-    let hasBlocked = false
 
-    for (let i = 0; i < diff; i++) {
-      const checkDate = moment(start).add(i, 'd').format(dateFormat);
-      const resultCheck = checkUnavailableDays(unavailableDays, checkDate);
+  const isDayHighlighted = () => {
 
-      if(resultCheck) hasBlocked = true;
-    }
-
-    return hasBlocked;
   }
 
   const handleErrorRange = () => {
@@ -68,10 +58,13 @@ const Calendar = () => {
         endDateId="2"
         startDatePlaceholderText={'Início'}
         endDatePlaceholderText={'Fim'}
+        onPrevMonthClick={(date) => {}}
+        onNextMonthClick={(date) => {}}
         onDatesChange={({ startDate, endDate }) => {
           setUnavailable(false);
+          const { unavailable_periods: unavailableDays } = calendar;
 
-          if(hasBlockedInTheRange(startDate, endDate)) {
+          if(hasBlockedInTheRange(startDate, endDate, unavailableDays)) {
             handleErrorRange();
           } else {
             setStartDate(startDate);
@@ -83,6 +76,8 @@ const Calendar = () => {
         displayFormat="DD/MM/YYYY"
         numberOfMonths={1}
         isDayBlocked={(day) => isDayBlocked(day)}
+        isDayHighlighted={() => true}
+        //isOutsideRange={() => true}
       />
       
       {
