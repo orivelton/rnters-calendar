@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react';
+import moment from 'moment';
 import 'react-dates/initialize';
 import 'react-dates/lib/css/_datepicker.css';
 import { DateRangePicker } from 'react-dates';
 import DateFormated from './DateFormated';
-import apiGet from '../api/api';
+import ErrorMessage from './ErrorMessage';
 import { formatDate, checkUnavailableDays } from '../helpers/formatDate';
-import moment from 'moment';
+import apiGet from '../api/api';
 
 const Calendar = () => {
   const [startDate, setStartDate] = useState(null);
@@ -81,7 +82,7 @@ const Calendar = () => {
       />
       
       {
-        unavailable && <p className="alert-danger" role="alert">Selecione outra data! Temos agendamento para esse grupo de datas</p>
+        unavailable && <ErrorMessage message={'Selecione outra data! Temos agendamento para esse grupo de datas'} />
       }
       
       <DateFormated date={startDate} />
