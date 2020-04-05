@@ -48,6 +48,8 @@ const Calendar = () => {
   return (
     <>
       <DateRangePicker
+        withPortal
+        keepOpenOnDateSelect
         startDate={startDate}
         endDate={endDate}
         startDateId="your_unique_start_date_id"
