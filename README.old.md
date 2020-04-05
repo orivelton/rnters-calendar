@@ -1,2 +1,0 @@
-# rnters-calendar
-Rnters Calendar
