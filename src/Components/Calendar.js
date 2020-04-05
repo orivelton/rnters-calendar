@@ -3,12 +3,13 @@ import moment from 'moment';
 import 'react-dates/initialize';
 import 'react-dates/lib/css/_datepicker.css';
 import { DateRangePicker } from 'react-dates';
-import DateFormated from './DateFormated';
 import ErrorMessage from './ErrorMessage';
 import { formatDate, checkUnavailableDays } from '../helpers/formatDate';
 import apiGet from '../api/api';
+import updateLocale from '../helpers/updateLocale';
 
 const Calendar = () => {
+  updateLocale();
   const [startDate, setStartDate] = useState(null);
   const [endDate, setEndDate] = useState(null);
   const [focusedInput, setFocusedInput] = useState(null);
@@ -56,6 +57,7 @@ const Calendar = () => {
   
   return (
     <>
+      <p>Escolha as datas</p>
       <DateRangePicker
         noBorder
         regular
@@ -64,6 +66,8 @@ const Calendar = () => {
         endDate={endDate}
         startDateId="1"
         endDateId="2"
+        startDatePlaceholderText={'Início'}
+        endDatePlaceholderText={'Fim'}
         onDatesChange={({ startDate, endDate }) => {
           setUnavailable(false);
 
@@ -82,11 +86,8 @@ const Calendar = () => {
       />
       
       {
-        unavailable && <ErrorMessage message={'Selecione outra data! Temos agendamento para esse grupo de datas'} />
+        unavailable && <ErrorMessage message={'Desculpe :( Não é possivel adicionar intervalos com dias bloqueados'} />
       }
-      
-      <DateFormated date={startDate} />
-      <DateFormated date={endDate} />
     </>
   )
 };
