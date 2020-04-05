@@ -48,12 +48,12 @@ const Calendar = () => {
   return (
     <>
       <DateRangePicker
+        noBorder
         withPortal
-        keepOpenOnDateSelect
         startDate={startDate}
         endDate={endDate}
-        startDateId="your_unique_start_date_id"
-        endDateId="your_unique_end_date_id"
+        startDateId="1"
+        endDateId="2"
         onDatesChange={({ startDate, endDate }) => {
           setStartDate(startDate);
           setEndDate(endDate)
