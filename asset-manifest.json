@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.fbdcbeb8.chunk.css",
-    "main.js": "/static/js/main.61b4034d.chunk.js",
-    "main.js.map": "/static/js/main.61b4034d.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.6e4c70f3.js",
-    "runtime-main.js.map": "/static/js/runtime-main.6e4c70f3.js.map",
-    "static/css/2.19b7558e.chunk.css": "/static/css/2.19b7558e.chunk.css",
-    "static/js/2.6727adf5.chunk.js": "/static/js/2.6727adf5.chunk.js",
-    "static/js/2.6727adf5.chunk.js.map": "/static/js/2.6727adf5.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.f52accdfb65584f33667be75b288ef94.js": "/precache-manifest.f52accdfb65584f33667be75b288ef94.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/2.19b7558e.chunk.css.map": "/static/css/2.19b7558e.chunk.css.map",
-    "static/css/main.fbdcbeb8.chunk.css.map": "/static/css/main.fbdcbeb8.chunk.css.map",
-    "static/js/2.6727adf5.chunk.js.LICENSE.txt": "/static/js/2.6727adf5.chunk.js.LICENSE.txt"
+    "main.css": "/rnters-calendar/static/css/main.fbdcbeb8.chunk.css",
+    "main.js": "/rnters-calendar/static/js/main.429a3934.chunk.js",
+    "main.js.map": "/rnters-calendar/static/js/main.429a3934.chunk.js.map",
+    "runtime-main.js": "/rnters-calendar/static/js/runtime-main.887a3718.js",
+    "runtime-main.js.map": "/rnters-calendar/static/js/runtime-main.887a3718.js.map",
+    "static/css/2.19b7558e.chunk.css": "/rnters-calendar/static/css/2.19b7558e.chunk.css",
+    "static/js/2.6727adf5.chunk.js": "/rnters-calendar/static/js/2.6727adf5.chunk.js",
+    "static/js/2.6727adf5.chunk.js.map": "/rnters-calendar/static/js/2.6727adf5.chunk.js.map",
+    "index.html": "/rnters-calendar/index.html",
+    "precache-manifest.366bbdac9de8539aeb7675233e283446.js": "/rnters-calendar/precache-manifest.366bbdac9de8539aeb7675233e283446.js",
+    "service-worker.js": "/rnters-calendar/service-worker.js",
+    "static/css/2.19b7558e.chunk.css.map": "/rnters-calendar/static/css/2.19b7558e.chunk.css.map",
+    "static/css/main.fbdcbeb8.chunk.css.map": "/rnters-calendar/static/css/main.fbdcbeb8.chunk.css.map",
+    "static/js/2.6727adf5.chunk.js.LICENSE.txt": "/rnters-calendar/static/js/2.6727adf5.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.6e4c70f3.js",
+    "static/js/runtime-main.887a3718.js",
     "static/css/2.19b7558e.chunk.css",
     "static/js/2.6727adf5.chunk.js",
     "static/css/main.fbdcbeb8.chunk.css",
-    "static/js/main.61b4034d.chunk.js"
+    "static/js/main.429a3934.chunk.js"
   ]
 }
