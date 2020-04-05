@@ -58,7 +58,7 @@ const Calendar = () => {
         }}
         focusedInput={focusedInput}
         onFocusChange={focusedInput => setFocusedInput(focusedInput)}
-        displayFormat="MM/DD/YYYY"
+        displayFormat="DD/MM/YYYY"
         numberOfMonths={1}
         isDayBlocked={(day) =>  isDayBlocked(day)}
       />

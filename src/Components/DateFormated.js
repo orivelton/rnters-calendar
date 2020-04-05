@@ -5,7 +5,7 @@ const DateFormated = ({ date }) => {
   console.log(date);
   return (
 
-    <Moment format="MM/DD/YYYY">{date}</Moment>
+    <Moment format="DD/MM/YYYY">{date}</Moment>
   )
 };
 

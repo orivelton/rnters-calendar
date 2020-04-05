@@ -39,7 +39,6 @@ const Rent = () => {
             </div>
 
             <div className="panel-body text-center">
-              
               <Calendar />
               <div className="items__quick_booking_container">
                 <button className="btn btn-primary">Default button</button>
