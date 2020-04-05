@@ -25,22 +25,20 @@ const Calendar = () => {
    const isDayBlocked = day => {
     const dayCalendar = formatDate(day);
     const { unavailable_periods: unavailableDays } = calendar;
-    const [...a] = unavailableDays;
-
-    const result = a[0].filter((item) => {
-      const itemDate = formatDate(item);
-      if(itemDate === dayCalendar) {
-        return item;
-      }
-    });
-    console.log('>>>>>', dayCalendar)
     
-    if(dayCalendar === '14/04/2020') {
-      console.log('Ok');
-      return true;
-    }
+    let isBlocked = false;
 
-    return false;
+    unavailableDays.forEach(item => {
+      item.forEach(item => {
+        const myDate = formatDate(item);
+        if (myDate === dayCalendar) {
+          isBlocked = true;
+          console.log('Here')
+        }
+      })
+    });
+
+    return isBlocked;
     
    }
 
