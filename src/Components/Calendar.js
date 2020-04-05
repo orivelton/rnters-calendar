@@ -23,23 +23,21 @@ const Calendar = () => {
    }, []);
 
    const isDayBlocked = day => {
+    let isBlocked = false;
     const dayCalendar = formatDate(day);
     const { unavailable_periods: unavailableDays } = calendar;
     
-    let isBlocked = false;
 
     unavailableDays.forEach(item => {
       item.forEach(item => {
         const myDate = formatDate(item);
         if (myDate === dayCalendar) {
           isBlocked = true;
-          console.log('Here')
         }
       })
     });
 
     return isBlocked;
-    
    }
 
 
