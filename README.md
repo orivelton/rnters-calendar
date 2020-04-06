@@ -1,7 +1,7 @@
-#[Rnters Calendar](https://github.com/airbnb/react-dates)
+#[Rnters Calendar](https://orivelton.github.io/rnters-calendar/)
 
 ## Links
-
+- https://orivelton.github.io/rnters-calendar/
 - https://github.com/airbnb/react-dates
 
 ## Task
