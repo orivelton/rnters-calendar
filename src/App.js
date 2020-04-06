@@ -4,14 +4,12 @@ import Header from './Components/Header';
 import Footer from './Components/Footer';
 import Content from './Components/Content';
 
-const App = () => {
-  return (
-    <>
-      <Header />
-      <Content />
-      <Footer />
-    </>
-  );
-}
+const App = () => (
+  <>
+    <Header />
+    <Content />
+    <Footer />
+  </>
+);
 
 export default App;
