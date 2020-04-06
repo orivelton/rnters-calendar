@@ -22,7 +22,7 @@
   "scripts": {
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build && yarn deploy",
     "test": "react-scripts test --silent",
     "eject": "react-scripts eject"
   },
