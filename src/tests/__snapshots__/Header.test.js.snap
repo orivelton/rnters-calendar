@@ -1,0 +1,265 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+Array [
+  <div
+    className="loader-wrapper"
+  >
+    <div
+      className="container cn"
+    >
+      <i
+        className="far fa-compass fa-spin fa-3x fa-fw"
+      />
+    </div>
+  </div>,
+  <nav
+    className="navbar navbar-fixed-top "
+  >
+    <div
+      className="container-fluid"
+    >
+      <div
+        className="navbar-header"
+      >
+        <div
+          className="navbar-brand"
+        >
+          <a
+            href="/pt"
+          >
+            <img
+              alt="Logo simple small"
+              src="https://d3urocn5qjrv7i.cloudfront.net/assets/logo_simple_small-45464c79c00c4d2f0a0e8e10c6b647eb2b8b569ed4abda9a906fca3f72d6e347.png"
+            />
+          </a>
+           
+        </div>
+        <button
+          aria-expanded="false"
+          className="navbar-toggle collapsed"
+          data-target="#navbar-collapse-menu"
+          data-toggle="collapse"
+          type="button"
+        >
+          <i
+            className="fas fa-ellipsis-h"
+          />
+        </button>
+      </div>
+      <div
+        className="collapse navbar-collapse"
+        id="navbar-collapse-menu"
+      >
+        <ul
+          className="nav navbar-nav navbar-right"
+        >
+          <li
+            className="btn_navbar navbar_option"
+            id="btn_become_owner"
+          >
+            <a
+              className="monetize_btn"
+              href="/pt/pages/make_money"
+            >
+              Adicionar artigos
+            </a>
+          </li>
+          <li
+            className="btn_navbar not_visible_mobile_lg"
+          >
+            <div
+              className="dropdown"
+            >
+              <a
+                aria-expanded="false"
+                aria-haspopup="true"
+                className="dropdown-toggle"
+                data-toggle="dropdown"
+                href="/"
+                role="button"
+              >
+                <span>
+                  Saber mais
+                </span>
+                 
+                <span
+                  className="caret"
+                />
+              </a>
+              <ul
+                className="dropdown-menu"
+                id="know_more_selector"
+              >
+                <li>
+                  <a
+                    className="navbar_option"
+                    href="/pt/pages/how_it_works"
+                    id="how_it_works"
+                  >
+                    Como funciona
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="navbar_option"
+                    href="/pt/pages/make_money"
+                    id="make_money"
+                  >
+                    Owner: Lucrar com o que está parado
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="navbar_option"
+                    href="/pt/pages/rent_stuff"
+                    id="rent_stuff"
+                  >
+                    Renter: Como alugar os meus artigos
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="navbar_option"
+                    href="/pt/pages/security"
+                    id="security"
+                  >
+                    Segurança
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li
+            className="btn_navbar only_visible_mobile_lg navbar_option"
+            id="btn_how_it_works"
+          >
+            <a
+              href="/pt/pages/how_it_works"
+            >
+              Como funciona
+            </a>
+          </li>
+          <li
+            className="btn_navbar only_visible_mobile_lg navbar_option"
+            id="btn_make_money"
+          >
+            <a
+              href="/pt/pages/make_money"
+            >
+              Owner: Lucrar com o que está parado
+            </a>
+          </li>
+          <li
+            className="btn_navbar only_visible_mobile_lg navbar_option"
+            id="btn_rent_stuff"
+          >
+            <a
+              href="/pt/pages/rent_stuff"
+            >
+              Renter: Como alugar os meus artigos
+            </a>
+          </li>
+          <li
+            className="btn_navbar only_visible_mobile_lg navbar_option"
+            id="btn_security"
+          >
+            <a
+              href="/pt/pages/security"
+            >
+              Segurança
+            </a>
+          </li>
+          <li
+            className="btn_navbar"
+          >
+            <a
+              className="navbar_option"
+              href="/pt/users/sign_in"
+              id="btn_sign_in"
+            >
+              Entrar
+            </a>
+          </li>
+          <li
+            className="btn_navbar"
+          >
+            <a
+              className="navbar_option"
+              href="/pt/users/sign_up"
+              id="btn_sing_up"
+            >
+              Registar
+            </a>
+          </li>
+          <li
+            className="btn_navbar not_visible_mobile_lg"
+          >
+            <div
+              className="dropdown"
+            >
+              <a
+                aria-expanded="false"
+                aria-haspopup="true"
+                className="dropdown-toggle"
+                data-toggle="dropdown"
+                href="/"
+                role="button"
+              >
+                <span>
+                  pt
+                </span>
+                 
+                <span
+                  className="caret"
+                />
+              </a>
+              <ul
+                className="dropdown-menu"
+                id="language_selector"
+              >
+                <li>
+                  <a
+                    data-turbolinks="false"
+                    href="/pt/items/1960-porto-portugal-alugar-babolat-pure-drive-raquete-tenis?change_locale=true"
+                  >
+                    Português
+                  </a>
+                </li>
+                <li>
+                  <a
+                    data-turbolinks="false"
+                    href="/en/items/1960-porto-portugal-alugar-babolat-pure-drive-raquete-tenis?change_locale=true"
+                  >
+                    English
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li
+            className="btn_navbar only_visible_mobile_lg"
+          >
+            <a
+              data-turbolinks="false"
+              href="/pt/items/1960-porto-portugal-alugar-babolat-pure-drive-raquete-tenis?change_locale=true"
+            >
+              Português
+            </a>
+          </li>
+          <li
+            className="btn_navbar only_visible_mobile_lg"
+          >
+            <a
+              data-turbolinks="false"
+              href="/en/items/1960-porto-portugal-alugar-babolat-pure-drive-raquete-tenis?change_locale=true"
+            >
+              English
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>,
+]
+`;

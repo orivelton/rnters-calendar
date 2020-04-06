@@ -1,51 +1,45 @@
 import React, { useState, useEffect } from 'react';
-import moment from 'moment';
+
 import 'react-dates/initialize';
 import 'react-dates/lib/css/_datepicker.css';
 import { DateRangePicker } from 'react-dates';
-import DateFormated from './DateFormated';
-import ErrorMessage from './ErrorMessage';
-import { formatDate, checkUnavailableDays } from '../helpers/formatDate';
+import moment from 'moment';
+
+import { hasBlockedInTheRange, checkAvailableDays } from '../helpers/checkDays';
 import apiGet from '../api/api';
+import updateLocale from '../helpers/updateLocale';
+import ErrorMessage from './ErrorMessage';
 
 const Calendar = () => {
+  updateLocale();
+  
   const [startDate, setStartDate] = useState(null);
   const [endDate, setEndDate] = useState(null);
   const [focusedInput, setFocusedInput] = useState(null);
   const [unavailable, setUnavailable] = useState(false);
-
   const [calendar, setCalendar] = useState([]);
+  const [currentMonth, setcurrentMonth] = useState(3);
 
   useEffect(() => {
     const fetchData = async () => {
-      const result = await apiGet();
+      const result = await apiGet(currentMonth);
       const {data: { attributes }} = result;
-      setCalendar(attributes);
+      attributes && setCalendar(attributes);
     };
-     fetchData();
-   }, []);
+    currentMonth >= moment().month() && fetchData();
+   }, [currentMonth]);
 
-   const isDayBlocked = day => {
-    const dayCalendar = formatDate(day);
-    const { unavailable_periods: unavailableDays } = calendar;
-
-    return checkUnavailableDays(unavailableDays, dayCalendar);
+  const isDayBlocked = day => {
+    const { available_periods: availablePeriods } = calendar;
+    return checkAvailableDays(availablePeriods, day);
   }
 
-  const hasBlockedInTheRange = (start, end) => {
-    const dateFormat = 'DD/MM/YYYY';
-    const diff = moment(end).diff(start, 'days') + 1;
-    const { unavailable_periods: unavailableDays } = calendar;
-    let hasBlocked = false
-
-    for (let i = 0; i < diff; i++) {
-      const checkDate = moment(start).add(i, 'd').format(dateFormat);
-      const resultCheck = checkUnavailableDays(unavailableDays, checkDate);
-
-      if(resultCheck) hasBlocked = true;
-    }
-
-    return hasBlocked;
+  const onPrevMonthClick = () => { setcurrentMonth(currentMonth -1)};
+  const onNextMonthClick = () => { setcurrentMonth(currentMonth +1)};
+  
+  const isDayHighlighted = day => {
+    const { confirmed_inquiries: confirmedInquiries } = calendar;
+    return !checkAvailableDays(confirmedInquiries, day);
   }
 
   const handleErrorRange = () => {
@@ -56,6 +50,7 @@ const Calendar = () => {
   
   return (
     <>
+      <p>Escolha as datas</p>
       <DateRangePicker
         noBorder
         regular
@@ -64,10 +59,13 @@ const Calendar = () => {
         endDate={endDate}
         startDateId="1"
         endDateId="2"
+        startDatePlaceholderText={'Início'}
+        endDatePlaceholderText={'Fim'}
         onDatesChange={({ startDate, endDate }) => {
           setUnavailable(false);
+          const { unavailable_periods: unavailableDays } = calendar;
 
-          if(hasBlockedInTheRange(startDate, endDate)) {
+          if(hasBlockedInTheRange(startDate, endDate, unavailableDays)) {
             handleErrorRange();
           } else {
             setStartDate(startDate);
@@ -78,15 +76,15 @@ const Calendar = () => {
         onFocusChange={focusedInput => setFocusedInput(focusedInput)}
         displayFormat="DD/MM/YYYY"
         numberOfMonths={1}
-        isDayBlocked={(day) => isDayBlocked(day)}
+        isDayHighlighted={day => isDayHighlighted(day)}
+        isDayBlocked={day => isDayBlocked(day)}
+        onPrevMonthClick={onPrevMonthClick}
+        onNextMonthClick={onNextMonthClick}
+        onClose={() => {setcurrentMonth(moment().month())}}
       />
-      
       {
-        unavailable && <ErrorMessage message={'Selecione outra data! Temos agendamento para esse grupo de datas'} />
+        unavailable && <ErrorMessage message={'Desculpe :( Não é possivel adicionar intervalos com dias bloqueados'} />
       }
-      
-      <DateFormated date={startDate} />
-      <DateFormated date={endDate} />
     </>
   )
 };

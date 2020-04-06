@@ -1,0 +1,394 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders correctly 1`] = `
+<div
+  className="item__detail item__detail_long"
+>
+  <div
+    className="row item_page_row"
+  >
+    <div
+      className="col-sm-8 item_page_left_column"
+    >
+      <div
+        className="panel"
+        style={
+          Object {
+            "marginBottom": "10px",
+          }
+        }
+      >
+        <div
+          className="row"
+        >
+          <div
+            className="col-xs-12"
+          >
+            <div
+              className="carousel items__page_carousel cn  slide item__carousel"
+              data-interval="false"
+              data-ride="carousel"
+              id="carousel-1960"
+            >
+              <div
+                className="carousel-caption"
+              >
+                <div>
+                  <p
+                    className="item__tag_label"
+                  >
+                    <a
+                      href="/pt/items/search?q=Desporto"
+                    >
+                      Desporto
+                    </a>
+                  </p>
+                </div>
+              </div>
+              <div
+                className="carousel-inner"
+              >
+                <div
+                  className="item active"
+                >
+                  <img
+                    alt="Babolat Pure Drive - Raquete Ténis"
+                    className="img-responsive center-block"
+                    src="https://dc3h9n0uz6yfs.cloudfront.net/item_photos/photos/000/004/739/large/101334_1_5.jpg?1583404891"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="row text-left"
+          style={
+            Object {
+              "padding": "0px 20px",
+            }
+          }
+        >
+          <div
+            className="col-xs-12"
+          >
+            <div
+              className="col-xs-10"
+            >
+              <h1
+                id="item_title"
+              >
+                <b>
+                  Item Name
+                </b>
+              </h1>
+            </div>
+          </div>
+          <div
+            className="col-xs-12"
+          >
+            <span
+              className="item_page_green_all_caps_title"
+            >
+               
+              <i
+                className="glyphicon glyphicon-map-marker"
+              />
+               Porto, Portugal
+            </span>
+          </div>
+        </div>
+        <div
+          className="row text-left"
+          style={
+            Object {
+              "padding": "0px 20px 40px 20px",
+            }
+          }
+        >
+          <div
+            className="col-xs-12"
+          >
+            Weight unstrung 300 g Technology Cortex Pure Feel, FSI Power, GT Technology, Elliptic Beam Composition GRAPHITE Head Size 99.98 in² / 645 cm² Length 26.97 in / 68.5 cm Stiffness 72 RA Balance unstrung 12.6 in / 32 cm Beam Width 23-26-23 mm String Pattern 16X19
+          </div>
+        </div>
+      </div>
+      <div
+        className="col-xs-12 text-center not_visible_mobile"
+        style={
+          Object {
+            "color": "grey",
+          }
+        }
+      >
+        <div>
+          <div
+            className="col-xs-2 text-center"
+          >
+            <small>
+              <b>
+                SABIAS QUE?
+              </b>
+            </small>
+          </div>
+          <div
+            className="col-xs-10 text-left"
+          >
+            <div
+              className="carousel slide"
+              data-interval="7000"
+              data-ride="carousel"
+              id="myCarousel"
+              style={
+                Object {
+                  "background": "transparent !important",
+                }
+              }
+            >
+              <div
+                className="carousel-inner"
+              >
+                <div
+                  className="item active"
+                >
+                  <small>
+                    Alugar é, em média, 90% mais barato que comprar. 
+                    <span
+                      className="glyphicon glyphicon-piggy-bank"
+                    />
+                     
+                  </small>
+                </div>
+                <div
+                  className="item"
+                >
+                  <small>
+                    Podes aumentar o teu rendimento mensal até 20% alugando as tuas coisas. 
+                    <span
+                      className="glyphicon glyphicon-circle-arrow-up"
+                    />
+                  </small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="col-sm-4 item_page_right_column"
+    >
+      <div
+        className="col-xs-12"
+      >
+        <div
+          className="panel panel-default user__info_panel"
+          style={
+            Object {
+              "marginBottom": "10px !important",
+            }
+          }
+        >
+          <div
+            className="user__info_panel_body"
+          >
+            <div
+              className="row"
+              style={
+                Object {
+                  "alignItems": "center",
+                  "display": "flex",
+                }
+              }
+            >
+              <div
+                className="col-xs-2"
+              >
+                <div
+                  style={
+                    Object {
+                      "borderRadius": "50%",
+                      "height": "50px",
+                      "margin": "0 auto",
+                      "overflow": "hidden",
+                      "width": "50px",
+                    }
+                  }
+                >
+                  <a
+                    href="/pt/profile/9194"
+                  >
+                    <img
+                      alt="Avatar"
+                      src="https://dc3h9n0uz6yfs.cloudfront.net/users/avatars/000/009/194/thumb_medium/picture?1583404198"
+                      style={
+                        Object {
+                          "height": "auto",
+                          "minHeight": "50px",
+                          "minWidth": "50px",
+                          "width": "100%",
+                        }
+                      }
+                    />
+                  </a>
+                </div>
+              </div>
+              <div
+                className="col-xs-7"
+              >
+                <div
+                  className="user__info_name_social_links_and_level"
+                >
+                  <strong>
+                    <a
+                      href="/pt/profile/9194"
+                      id="owner_name"
+                    >
+                      Owner Name
+                    </a>
+                  </strong>
+                  <i
+                    className="glyphicon glyphicon-ok-sign"
+                  />
+                </div>
+              </div>
+              <div
+                className="col-xs-3 user__info_rating cn"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          className="col-xs-12"
+        >
+          <div
+            className="panel panel-default item__details_panel "
+          >
+            <div
+              className="item__detail_price"
+            >
+              <strong>
+                €00,00
+              </strong>
+               / dia
+            </div>
+            <div
+              className="panel-body text-center"
+            >
+              <p>
+                Escolha as datas
+              </p>
+              <div
+                className="DateRangePicker DateRangePicker_1"
+              >
+                <div
+                  className="DateRangePickerInput DateRangePickerInput_1"
+                >
+                  <div
+                    className="DateInput DateInput_1"
+                  >
+                    <input
+                      aria-describedby="DateInput__screen-reader-message-1"
+                      aria-label="Início"
+                      autoComplete="off"
+                      className="DateInput_input DateInput_input_1 DateInput_input__regular DateInput_input__regular_2"
+                      disabled={false}
+                      id="1"
+                      name="1"
+                      onChange={[Function]}
+                      onFocus={[Function]}
+                      onKeyDown={[Function]}
+                      placeholder="Início"
+                      readOnly={false}
+                      required={false}
+                      type="text"
+                      value=""
+                    />
+                    <p
+                      className="DateInput_screenReaderMessage DateInput_screenReaderMessage_1"
+                      id="DateInput__screen-reader-message-1"
+                    >
+                      Navigate forward to interact with the calendar and select a date. Press the question mark key to get the keyboard shortcuts for changing dates.
+                    </p>
+                  </div>
+                  <div
+                    aria-hidden="true"
+                    className="DateRangePickerInput_arrow DateRangePickerInput_arrow_1"
+                    role="presentation"
+                  >
+                    <svg
+                      className="DateRangePickerInput_arrow_svg DateRangePickerInput_arrow_svg_1"
+                      focusable="false"
+                      viewBox="0 0 1000 1000"
+                    >
+                      <path
+                        d="M694 242l249 250c12 11 12 21 1 32L694 773c-5 5-10 7-16 7s-11-2-16-7c-11-11-11-21 0-32l210-210H68c-13 0-23-10-23-23s10-23 23-23h806L662 275c-21-22 11-54 32-33z"
+                      />
+                    </svg>
+                  </div>
+                  <div
+                    className="DateInput DateInput_1"
+                  >
+                    <input
+                      aria-describedby="DateInput__screen-reader-message-2"
+                      aria-label="Fim"
+                      autoComplete="off"
+                      className="DateInput_input DateInput_input_1 DateInput_input__regular DateInput_input__regular_2"
+                      disabled={false}
+                      id="2"
+                      name="2"
+                      onChange={[Function]}
+                      onFocus={[Function]}
+                      onKeyDown={[Function]}
+                      placeholder="Fim"
+                      readOnly={false}
+                      required={false}
+                      type="text"
+                      value=""
+                    />
+                    <p
+                      className="DateInput_screenReaderMessage DateInput_screenReaderMessage_1"
+                      id="DateInput__screen-reader-message-2"
+                    >
+                      Navigate backward to interact with the calendar and select a date. Press the question mark key to get the keyboard shortcuts for changing dates.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                className="items__quick_booking_container"
+              >
+                <button
+                  className="btn btn-primary"
+                >
+                  Default button
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="text-center"
+        >
+          <small>
+             
+            <a
+              href="#info_zone_row"
+              id="info_zone_link"
+            >
+              Como funciona
+            </a>
+             / 
+            <a
+              href="#feedback_zone_row"
+              id="feedback_zone_link"
+            >
+              Feedback
+            </a>
+          </small>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

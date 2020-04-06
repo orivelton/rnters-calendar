@@ -1,0 +1,218 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="col-sm-4 item_page_right_column"
+>
+  <div
+    className="col-xs-12"
+  >
+    <div
+      className="panel panel-default user__info_panel"
+      style={
+        Object {
+          "marginBottom": "10px !important",
+        }
+      }
+    >
+      <div
+        className="user__info_panel_body"
+      >
+        <div
+          className="row"
+          style={
+            Object {
+              "alignItems": "center",
+              "display": "flex",
+            }
+          }
+        >
+          <div
+            className="col-xs-2"
+          >
+            <div
+              style={
+                Object {
+                  "borderRadius": "50%",
+                  "height": "50px",
+                  "margin": "0 auto",
+                  "overflow": "hidden",
+                  "width": "50px",
+                }
+              }
+            >
+              <a
+                href="/pt/profile/9194"
+              >
+                <img
+                  alt="Avatar"
+                  src="https://dc3h9n0uz6yfs.cloudfront.net/users/avatars/000/009/194/thumb_medium/picture?1583404198"
+                  style={
+                    Object {
+                      "height": "auto",
+                      "minHeight": "50px",
+                      "minWidth": "50px",
+                      "width": "100%",
+                    }
+                  }
+                />
+              </a>
+            </div>
+          </div>
+          <div
+            className="col-xs-7"
+          >
+            <div
+              className="user__info_name_social_links_and_level"
+            >
+              <strong>
+                <a
+                  href="/pt/profile/9194"
+                  id="owner_name"
+                >
+                  Owner Name
+                </a>
+              </strong>
+              <i
+                className="glyphicon glyphicon-ok-sign"
+              />
+            </div>
+          </div>
+          <div
+            className="col-xs-3 user__info_rating cn"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      className="col-xs-12"
+    >
+      <div
+        className="panel panel-default item__details_panel "
+      >
+        <div
+          className="item__detail_price"
+        >
+          <strong>
+            €00,00
+          </strong>
+           / dia
+        </div>
+        <div
+          className="panel-body text-center"
+        >
+          <p>
+            Escolha as datas
+          </p>
+          <div
+            className="DateRangePicker DateRangePicker_1"
+          >
+            <div
+              className="DateRangePickerInput DateRangePickerInput_1"
+            >
+              <div
+                className="DateInput DateInput_1"
+              >
+                <input
+                  aria-describedby="DateInput__screen-reader-message-1"
+                  aria-label="Início"
+                  autoComplete="off"
+                  className="DateInput_input DateInput_input_1 DateInput_input__regular DateInput_input__regular_2"
+                  disabled={false}
+                  id="1"
+                  name="1"
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  onKeyDown={[Function]}
+                  placeholder="Início"
+                  readOnly={false}
+                  required={false}
+                  type="text"
+                  value=""
+                />
+                <p
+                  className="DateInput_screenReaderMessage DateInput_screenReaderMessage_1"
+                  id="DateInput__screen-reader-message-1"
+                >
+                  Navigate forward to interact with the calendar and select a date. Press the question mark key to get the keyboard shortcuts for changing dates.
+                </p>
+              </div>
+              <div
+                aria-hidden="true"
+                className="DateRangePickerInput_arrow DateRangePickerInput_arrow_1"
+                role="presentation"
+              >
+                <svg
+                  className="DateRangePickerInput_arrow_svg DateRangePickerInput_arrow_svg_1"
+                  focusable="false"
+                  viewBox="0 0 1000 1000"
+                >
+                  <path
+                    d="M694 242l249 250c12 11 12 21 1 32L694 773c-5 5-10 7-16 7s-11-2-16-7c-11-11-11-21 0-32l210-210H68c-13 0-23-10-23-23s10-23 23-23h806L662 275c-21-22 11-54 32-33z"
+                  />
+                </svg>
+              </div>
+              <div
+                className="DateInput DateInput_1"
+              >
+                <input
+                  aria-describedby="DateInput__screen-reader-message-2"
+                  aria-label="Fim"
+                  autoComplete="off"
+                  className="DateInput_input DateInput_input_1 DateInput_input__regular DateInput_input__regular_2"
+                  disabled={false}
+                  id="2"
+                  name="2"
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  onKeyDown={[Function]}
+                  placeholder="Fim"
+                  readOnly={false}
+                  required={false}
+                  type="text"
+                  value=""
+                />
+                <p
+                  className="DateInput_screenReaderMessage DateInput_screenReaderMessage_1"
+                  id="DateInput__screen-reader-message-2"
+                >
+                  Navigate backward to interact with the calendar and select a date. Press the question mark key to get the keyboard shortcuts for changing dates.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            className="items__quick_booking_container"
+          >
+            <button
+              className="btn btn-primary"
+            >
+              Default button
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="text-center"
+    >
+      <small>
+         
+        <a
+          href="#info_zone_row"
+          id="info_zone_link"
+        >
+          Como funciona
+        </a>
+         / 
+        <a
+          href="#feedback_zone_row"
+          id="feedback_zone_link"
+        >
+          Feedback
+        </a>
+      </small>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,846 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+Array [
+  <div
+    className="loader-wrapper"
+  >
+    <div
+      className="container cn"
+    >
+      <i
+        className="far fa-compass fa-spin fa-3x fa-fw"
+      />
+    </div>
+  </div>,
+  <nav
+    className="navbar navbar-fixed-top "
+  >
+    <div
+      className="container-fluid"
+    >
+      <div
+        className="navbar-header"
+      >
+        <div
+          className="navbar-brand"
+        >
+          <a
+            href="/pt"
+          >
+            <img
+              alt="Logo simple small"
+              src="https://d3urocn5qjrv7i.cloudfront.net/assets/logo_simple_small-45464c79c00c4d2f0a0e8e10c6b647eb2b8b569ed4abda9a906fca3f72d6e347.png"
+            />
+          </a>
+           
+        </div>
+        <button
+          aria-expanded="false"
+          className="navbar-toggle collapsed"
+          data-target="#navbar-collapse-menu"
+          data-toggle="collapse"
+          type="button"
+        >
+          <i
+            className="fas fa-ellipsis-h"
+          />
+        </button>
+      </div>
+      <div
+        className="collapse navbar-collapse"
+        id="navbar-collapse-menu"
+      >
+        <ul
+          className="nav navbar-nav navbar-right"
+        >
+          <li
+            className="btn_navbar navbar_option"
+            id="btn_become_owner"
+          >
+            <a
+              className="monetize_btn"
+              href="/pt/pages/make_money"
+            >
+              Adicionar artigos
+            </a>
+          </li>
+          <li
+            className="btn_navbar not_visible_mobile_lg"
+          >
+            <div
+              className="dropdown"
+            >
+              <a
+                aria-expanded="false"
+                aria-haspopup="true"
+                className="dropdown-toggle"
+                data-toggle="dropdown"
+                href="/"
+                role="button"
+              >
+                <span>
+                  Saber mais
+                </span>
+                 
+                <span
+                  className="caret"
+                />
+              </a>
+              <ul
+                className="dropdown-menu"
+                id="know_more_selector"
+              >
+                <li>
+                  <a
+                    className="navbar_option"
+                    href="/pt/pages/how_it_works"
+                    id="how_it_works"
+                  >
+                    Como funciona
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="navbar_option"
+                    href="/pt/pages/make_money"
+                    id="make_money"
+                  >
+                    Owner: Lucrar com o que está parado
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="navbar_option"
+                    href="/pt/pages/rent_stuff"
+                    id="rent_stuff"
+                  >
+                    Renter: Como alugar os meus artigos
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="navbar_option"
+                    href="/pt/pages/security"
+                    id="security"
+                  >
+                    Segurança
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li
+            className="btn_navbar only_visible_mobile_lg navbar_option"
+            id="btn_how_it_works"
+          >
+            <a
+              href="/pt/pages/how_it_works"
+            >
+              Como funciona
+            </a>
+          </li>
+          <li
+            className="btn_navbar only_visible_mobile_lg navbar_option"
+            id="btn_make_money"
+          >
+            <a
+              href="/pt/pages/make_money"
+            >
+              Owner: Lucrar com o que está parado
+            </a>
+          </li>
+          <li
+            className="btn_navbar only_visible_mobile_lg navbar_option"
+            id="btn_rent_stuff"
+          >
+            <a
+              href="/pt/pages/rent_stuff"
+            >
+              Renter: Como alugar os meus artigos
+            </a>
+          </li>
+          <li
+            className="btn_navbar only_visible_mobile_lg navbar_option"
+            id="btn_security"
+          >
+            <a
+              href="/pt/pages/security"
+            >
+              Segurança
+            </a>
+          </li>
+          <li
+            className="btn_navbar"
+          >
+            <a
+              className="navbar_option"
+              href="/pt/users/sign_in"
+              id="btn_sign_in"
+            >
+              Entrar
+            </a>
+          </li>
+          <li
+            className="btn_navbar"
+          >
+            <a
+              className="navbar_option"
+              href="/pt/users/sign_up"
+              id="btn_sing_up"
+            >
+              Registar
+            </a>
+          </li>
+          <li
+            className="btn_navbar not_visible_mobile_lg"
+          >
+            <div
+              className="dropdown"
+            >
+              <a
+                aria-expanded="false"
+                aria-haspopup="true"
+                className="dropdown-toggle"
+                data-toggle="dropdown"
+                href="/"
+                role="button"
+              >
+                <span>
+                  pt
+                </span>
+                 
+                <span
+                  className="caret"
+                />
+              </a>
+              <ul
+                className="dropdown-menu"
+                id="language_selector"
+              >
+                <li>
+                  <a
+                    data-turbolinks="false"
+                    href="/pt/items/1960-porto-portugal-alugar-babolat-pure-drive-raquete-tenis?change_locale=true"
+                  >
+                    Português
+                  </a>
+                </li>
+                <li>
+                  <a
+                    data-turbolinks="false"
+                    href="/en/items/1960-porto-portugal-alugar-babolat-pure-drive-raquete-tenis?change_locale=true"
+                  >
+                    English
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li
+            className="btn_navbar only_visible_mobile_lg"
+          >
+            <a
+              data-turbolinks="false"
+              href="/pt/items/1960-porto-portugal-alugar-babolat-pure-drive-raquete-tenis?change_locale=true"
+            >
+              Português
+            </a>
+          </li>
+          <li
+            className="btn_navbar only_visible_mobile_lg"
+          >
+            <a
+              data-turbolinks="false"
+              href="/en/items/1960-porto-portugal-alugar-babolat-pure-drive-raquete-tenis?change_locale=true"
+            >
+              English
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>,
+  <div
+    className="item__detail item__detail_long"
+  >
+    <div
+      className="row item_page_row"
+    >
+      <div
+        className="col-sm-8 item_page_left_column"
+      >
+        <div
+          className="panel"
+          style={
+            Object {
+              "marginBottom": "10px",
+            }
+          }
+        >
+          <div
+            className="row"
+          >
+            <div
+              className="col-xs-12"
+            >
+              <div
+                className="carousel items__page_carousel cn  slide item__carousel"
+                data-interval="false"
+                data-ride="carousel"
+                id="carousel-1960"
+              >
+                <div
+                  className="carousel-caption"
+                >
+                  <div>
+                    <p
+                      className="item__tag_label"
+                    >
+                      <a
+                        href="/pt/items/search?q=Desporto"
+                      >
+                        Desporto
+                      </a>
+                    </p>
+                  </div>
+                </div>
+                <div
+                  className="carousel-inner"
+                >
+                  <div
+                    className="item active"
+                  >
+                    <img
+                      alt="Babolat Pure Drive - Raquete Ténis"
+                      className="img-responsive center-block"
+                      src="https://dc3h9n0uz6yfs.cloudfront.net/item_photos/photos/000/004/739/large/101334_1_5.jpg?1583404891"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            className="row text-left"
+            style={
+              Object {
+                "padding": "0px 20px",
+              }
+            }
+          >
+            <div
+              className="col-xs-12"
+            >
+              <div
+                className="col-xs-10"
+              >
+                <h1
+                  id="item_title"
+                >
+                  <b>
+                    Item Name
+                  </b>
+                </h1>
+              </div>
+            </div>
+            <div
+              className="col-xs-12"
+            >
+              <span
+                className="item_page_green_all_caps_title"
+              >
+                 
+                <i
+                  className="glyphicon glyphicon-map-marker"
+                />
+                 Porto, Portugal
+              </span>
+            </div>
+          </div>
+          <div
+            className="row text-left"
+            style={
+              Object {
+                "padding": "0px 20px 40px 20px",
+              }
+            }
+          >
+            <div
+              className="col-xs-12"
+            >
+              Weight unstrung 300 g Technology Cortex Pure Feel, FSI Power, GT Technology, Elliptic Beam Composition GRAPHITE Head Size 99.98 in² / 645 cm² Length 26.97 in / 68.5 cm Stiffness 72 RA Balance unstrung 12.6 in / 32 cm Beam Width 23-26-23 mm String Pattern 16X19
+            </div>
+          </div>
+        </div>
+        <div
+          className="col-xs-12 text-center not_visible_mobile"
+          style={
+            Object {
+              "color": "grey",
+            }
+          }
+        >
+          <div>
+            <div
+              className="col-xs-2 text-center"
+            >
+              <small>
+                <b>
+                  SABIAS QUE?
+                </b>
+              </small>
+            </div>
+            <div
+              className="col-xs-10 text-left"
+            >
+              <div
+                className="carousel slide"
+                data-interval="7000"
+                data-ride="carousel"
+                id="myCarousel"
+                style={
+                  Object {
+                    "background": "transparent !important",
+                  }
+                }
+              >
+                <div
+                  className="carousel-inner"
+                >
+                  <div
+                    className="item active"
+                  >
+                    <small>
+                      Alugar é, em média, 90% mais barato que comprar. 
+                      <span
+                        className="glyphicon glyphicon-piggy-bank"
+                      />
+                       
+                    </small>
+                  </div>
+                  <div
+                    className="item"
+                  >
+                    <small>
+                      Podes aumentar o teu rendimento mensal até 20% alugando as tuas coisas. 
+                      <span
+                        className="glyphicon glyphicon-circle-arrow-up"
+                      />
+                    </small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="col-sm-4 item_page_right_column"
+      >
+        <div
+          className="col-xs-12"
+        >
+          <div
+            className="panel panel-default user__info_panel"
+            style={
+              Object {
+                "marginBottom": "10px !important",
+              }
+            }
+          >
+            <div
+              className="user__info_panel_body"
+            >
+              <div
+                className="row"
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "display": "flex",
+                  }
+                }
+              >
+                <div
+                  className="col-xs-2"
+                >
+                  <div
+                    style={
+                      Object {
+                        "borderRadius": "50%",
+                        "height": "50px",
+                        "margin": "0 auto",
+                        "overflow": "hidden",
+                        "width": "50px",
+                      }
+                    }
+                  >
+                    <a
+                      href="/pt/profile/9194"
+                    >
+                      <img
+                        alt="Avatar"
+                        src="https://dc3h9n0uz6yfs.cloudfront.net/users/avatars/000/009/194/thumb_medium/picture?1583404198"
+                        style={
+                          Object {
+                            "height": "auto",
+                            "minHeight": "50px",
+                            "minWidth": "50px",
+                            "width": "100%",
+                          }
+                        }
+                      />
+                    </a>
+                  </div>
+                </div>
+                <div
+                  className="col-xs-7"
+                >
+                  <div
+                    className="user__info_name_social_links_and_level"
+                  >
+                    <strong>
+                      <a
+                        href="/pt/profile/9194"
+                        id="owner_name"
+                      >
+                        Owner Name
+                      </a>
+                    </strong>
+                    <i
+                      className="glyphicon glyphicon-ok-sign"
+                    />
+                  </div>
+                </div>
+                <div
+                  className="col-xs-3 user__info_rating cn"
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            className="col-xs-12"
+          >
+            <div
+              className="panel panel-default item__details_panel "
+            >
+              <div
+                className="item__detail_price"
+              >
+                <strong>
+                  €00,00
+                </strong>
+                 / dia
+              </div>
+              <div
+                className="panel-body text-center"
+              >
+                <p>
+                  Escolha as datas
+                </p>
+                <div
+                  className="DateRangePicker DateRangePicker_1"
+                >
+                  <div
+                    className="DateRangePickerInput DateRangePickerInput_1"
+                  >
+                    <div
+                      className="DateInput DateInput_1"
+                    >
+                      <input
+                        aria-describedby="DateInput__screen-reader-message-1"
+                        aria-label="Início"
+                        autoComplete="off"
+                        className="DateInput_input DateInput_input_1 DateInput_input__regular DateInput_input__regular_2"
+                        disabled={false}
+                        id="1"
+                        name="1"
+                        onChange={[Function]}
+                        onFocus={[Function]}
+                        onKeyDown={[Function]}
+                        placeholder="Início"
+                        readOnly={false}
+                        required={false}
+                        type="text"
+                        value=""
+                      />
+                      <p
+                        className="DateInput_screenReaderMessage DateInput_screenReaderMessage_1"
+                        id="DateInput__screen-reader-message-1"
+                      >
+                        Navigate forward to interact with the calendar and select a date. Press the question mark key to get the keyboard shortcuts for changing dates.
+                      </p>
+                    </div>
+                    <div
+                      aria-hidden="true"
+                      className="DateRangePickerInput_arrow DateRangePickerInput_arrow_1"
+                      role="presentation"
+                    >
+                      <svg
+                        className="DateRangePickerInput_arrow_svg DateRangePickerInput_arrow_svg_1"
+                        focusable="false"
+                        viewBox="0 0 1000 1000"
+                      >
+                        <path
+                          d="M694 242l249 250c12 11 12 21 1 32L694 773c-5 5-10 7-16 7s-11-2-16-7c-11-11-11-21 0-32l210-210H68c-13 0-23-10-23-23s10-23 23-23h806L662 275c-21-22 11-54 32-33z"
+                        />
+                      </svg>
+                    </div>
+                    <div
+                      className="DateInput DateInput_1"
+                    >
+                      <input
+                        aria-describedby="DateInput__screen-reader-message-2"
+                        aria-label="Fim"
+                        autoComplete="off"
+                        className="DateInput_input DateInput_input_1 DateInput_input__regular DateInput_input__regular_2"
+                        disabled={false}
+                        id="2"
+                        name="2"
+                        onChange={[Function]}
+                        onFocus={[Function]}
+                        onKeyDown={[Function]}
+                        placeholder="Fim"
+                        readOnly={false}
+                        required={false}
+                        type="text"
+                        value=""
+                      />
+                      <p
+                        className="DateInput_screenReaderMessage DateInput_screenReaderMessage_1"
+                        id="DateInput__screen-reader-message-2"
+                      >
+                        Navigate backward to interact with the calendar and select a date. Press the question mark key to get the keyboard shortcuts for changing dates.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  className="items__quick_booking_container"
+                >
+                  <button
+                    className="btn btn-primary"
+                  >
+                    Default button
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            className="text-center"
+          >
+            <small>
+               
+              <a
+                href="#info_zone_row"
+                id="info_zone_link"
+              >
+                Como funciona
+              </a>
+               / 
+              <a
+                href="#feedback_zone_row"
+                id="feedback_zone_link"
+              >
+                Feedback
+              </a>
+            </small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+  <footer
+    className="not_visible_mobile text-left"
+  >
+    <div
+      className="container-fluid"
+    >
+      <div
+        className="row"
+      >
+        <div
+          className="col-sm-4 footer_section"
+        >
+          <p>
+            <b>
+              LINKS ÚTEIS
+            </b>
+          </p>
+          <p>
+            <a
+              href="/pt/pages/security"
+            >
+              Garantia SafeStuff
+            </a>
+          </p>
+          <p>
+            <a
+              href="/pt/pages/faq"
+            >
+              FAQ
+            </a>
+          </p>
+          <p>
+            <a
+              href="/pt/pages/terms"
+            >
+              Termos de Serviço
+            </a>
+          </p>
+          <p>
+            <a
+              href="/pt/pages/privacy"
+            >
+              Política de Privacidade
+            </a>
+          </p>
+        </div>
+        <div
+          className="col-sm-4 footer_section text-left"
+        >
+          <p>
+            <b>
+              CONNECT
+            </b>
+          </p>
+          <p
+            className="footer__subscribe_text"
+          >
+            Não percas as novidades!
+          </p>
+          <form
+            action="/pt/subscribe_newsletter"
+            className="footer__subscribe_form form-inline"
+            method="post"
+          >
+            <input
+              name="utf8"
+              type="hidden"
+              value="✓"
+            />
+            <input
+              name="authenticity_token"
+              type="hidden"
+              value="pj0JuSmlvEehsiycv4Jpmnz80EhkXOAtf5B+F5W1lYna7Q+AH57LBflwQ59FpaNSm+qyQGVYlpyO3eWhoP5dlw=="
+            />
+            <div
+              className="row"
+              style={
+                Object {
+                  "marginBottom": "10px",
+                }
+              }
+            >
+              <div
+                className="col-xs-6"
+              >
+                <input
+                  className="form-control"
+                  id="_email"
+                  name="[email]"
+                  placeholder="O teu email"
+                  required="required"
+                  type="email"
+                />
+              </div>
+              <div
+                className="col-xs-6"
+              >
+                <input
+                  className="btn btn-primary"
+                  name="commit"
+                  type="submit"
+                  value="Subscreve"
+                />
+              </div>
+            </div>
+          </form>
+          <p>
+            <a
+              className="social_icons"
+              href="https://www.facebook.com/Rnters-452745608263925"
+            >
+              <i
+                className="fab fa-facebook-f fa-lg"
+              />
+               Like and share
+            </a>
+          </p>
+          <p>
+            <a
+              className="social_icons"
+              href="https://www.instagram.com/rnters.pt/"
+            >
+              <i
+                className="fab fa-instagram fa-lg"
+              />
+               Follow us
+            </a>
+          </p>
+        </div>
+        <div
+          className="col-sm-4 footer_section"
+        >
+          <p>
+            <b>
+              Para mais informações contacta:
+            </b>
+          </p>
+          <div
+            className="row"
+          >
+            <div
+              className="col-sm-2"
+            >
+              <img
+                alt="Logo brand primary"
+                src="https://d3urocn5qjrv7i.cloudfront.net/assets/logo_brand_primary-576ad0b1b49e8bde9dd8c6ffa1ae8384c65f3fb696589c69897463951fcab743.png"
+                style={
+                  Object {
+                    "height": "50px",
+                  }
+                }
+              />
+            </div>
+            <div
+              className="col-sm-10"
+            >
+              <p>
+                <a
+                  data-turbolinks="false"
+                  href="/en/items/1960-porto-portugal-alugar-babolat-pure-drive-raquete-tenis?change_locale=true"
+                >
+                  English
+                </a>
+                |
+                <a
+                  data-turbolinks="false"
+                  href="/pt/items/1960-porto-portugal-alugar-babolat-pure-drive-raquete-tenis?change_locale=true"
+                >
+                  Português
+                </a>
+              </p>
+              <p>
+                <a
+                  className="social_icons"
+                  href="mailto:info@rnters.com"
+                >
+                  <i
+                    className="fas fa-envelope fa-lg"
+                  />
+                  info@rnters.com
+                </a>
+              </p>
+              <p>
+                2016-2020 Rnters ©
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>,
+]
+`;
