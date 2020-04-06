@@ -6,37 +6,40 @@ import ErrorMessage from './ErrorMessage';
 import { hasBlockedInTheRange, checkAvailableDays } from '../helpers/checkDays';
 import apiGet from '../api/api';
 import updateLocale from '../helpers/updateLocale';
+import moment from 'moment';
 
 const Calendar = () => {
   updateLocale();
+  
   const [startDate, setStartDate] = useState(null);
   const [endDate, setEndDate] = useState(null);
   const [focusedInput, setFocusedInput] = useState(null);
   const [unavailable, setUnavailable] = useState(false);
-
   const [calendar, setCalendar] = useState([]);
+  const [currentMonth, setcurrentMonth] = useState(3);
 
   useEffect(() => {
     const fetchData = async () => {
-      const result = await apiGet();
+      const result = await apiGet(currentMonth);
       const {data: { attributes }} = result;
-      setCalendar(attributes);
+      attributes && setCalendar(attributes);
     };
-     fetchData();
-   }, []);
+    currentMonth >= moment().month() && fetchData();
+   }, [currentMonth]);
 
   const isDayBlocked = day => {
-    const { 
-      unavailable_periods: unavailableDays,
-      available_periods: availablePeriods 
-    } = calendar;
-
+    const { available_periods: availablePeriods } = calendar;
     return checkAvailableDays(availablePeriods, day);
   }
 
+  const onPrevMonthClick = () => { setcurrentMonth(currentMonth -1)};
+  const onNextMonthClick = () => { setcurrentMonth(currentMonth +1)};
+  
 
-  const isDayHighlighted = () => {
 
+  const isDayHighlighted = day => {
+    const { confirmed_inquiries: confirmedInquiries } = calendar;
+    return !checkAvailableDays(confirmedInquiries, day);
   }
 
   const handleErrorRange = () => {
@@ -58,8 +61,6 @@ const Calendar = () => {
         endDateId="2"
         startDatePlaceholderText={'Início'}
         endDatePlaceholderText={'Fim'}
-        onPrevMonthClick={(date) => {}}
-        onNextMonthClick={(date) => {}}
         onDatesChange={({ startDate, endDate }) => {
           setUnavailable(false);
           const { unavailable_periods: unavailableDays } = calendar;
@@ -75,11 +76,12 @@ const Calendar = () => {
         onFocusChange={focusedInput => setFocusedInput(focusedInput)}
         displayFormat="DD/MM/YYYY"
         numberOfMonths={1}
-        isDayBlocked={(day) => isDayBlocked(day)}
-        isDayHighlighted={() => true}
-        //isOutsideRange={() => true}
+        isDayHighlighted={day => isDayHighlighted(day)}
+        isDayBlocked={day => isDayBlocked(day)}
+        onPrevMonthClick={onPrevMonthClick}
+        onNextMonthClick={onNextMonthClick}
+        onClose={() => {setcurrentMonth(moment().month())}}
       />
-      
       {
         unavailable && <ErrorMessage message={'Desculpe :( Não é possivel adicionar intervalos com dias bloqueados'} />
       }

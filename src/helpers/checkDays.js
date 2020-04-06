@@ -19,9 +19,9 @@ const checkUnavailableDays = (unavailableDays, day) => {
 const checkAvailableDays = (days, day) => {
   let result = true;
   days.forEach(item => {
-    const date = moment(formatDate(day), "DD/MM/YYYY");
-    const startDate = moment(formatDate(item[0]), "DD/MM/YYYY");
-    const endDate = moment(formatDate(item[1]), "DD/MM/YYYY");
+    const date = moment(day, 'YYYY-MM-DD[T]HH:mm:ss.SSS[Z]');
+    const startDate = moment(item[0], 'YYYY-MM-DD[T]HH:mm:ss.SSS[Z]');
+    const endDate = moment(item[1], 'YYYY-MM-DD[T]HH:mm:ss.SSS[Z]');
 
     if((date.isBefore(endDate) && date.isAfter(startDate)) || (date.isSame(startDate) || date.isSame(endDate))) {
       result = false;
