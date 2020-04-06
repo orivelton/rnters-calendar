@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from 'react';
+
 import 'react-dates/initialize';
 import 'react-dates/lib/css/_datepicker.css';
 import { DateRangePicker } from 'react-dates';
-import ErrorMessage from './ErrorMessage';
+import moment from 'moment';
+
 import { hasBlockedInTheRange, checkAvailableDays } from '../helpers/checkDays';
 import apiGet from '../api/api';
 import updateLocale from '../helpers/updateLocale';
-import moment from 'moment';
+import ErrorMessage from './ErrorMessage';
 
 const Calendar = () => {
   updateLocale();
@@ -35,8 +37,6 @@ const Calendar = () => {
   const onPrevMonthClick = () => { setcurrentMonth(currentMonth -1)};
   const onNextMonthClick = () => { setcurrentMonth(currentMonth +1)};
   
-
-
   const isDayHighlighted = day => {
     const { confirmed_inquiries: confirmedInquiries } = calendar;
     return !checkAvailableDays(confirmedInquiries, day);

@@ -1,0 +1,195 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<footer
+  className="not_visible_mobile text-left"
+>
+  <div
+    className="container-fluid"
+  >
+    <div
+      className="row"
+    >
+      <div
+        className="col-sm-4 footer_section"
+      >
+        <p>
+          <b>
+            LINKS ÚTEIS
+          </b>
+        </p>
+        <p>
+          <a
+            href="/pt/pages/security"
+          >
+            Garantia SafeStuff
+          </a>
+        </p>
+        <p>
+          <a
+            href="/pt/pages/faq"
+          >
+            FAQ
+          </a>
+        </p>
+        <p>
+          <a
+            href="/pt/pages/terms"
+          >
+            Termos de Serviço
+          </a>
+        </p>
+        <p>
+          <a
+            href="/pt/pages/privacy"
+          >
+            Política de Privacidade
+          </a>
+        </p>
+      </div>
+      <div
+        className="col-sm-4 footer_section text-left"
+      >
+        <p>
+          <b>
+            CONNECT
+          </b>
+        </p>
+        <p
+          className="footer__subscribe_text"
+        >
+          Não percas as novidades!
+        </p>
+        <form
+          action="/pt/subscribe_newsletter"
+          className="footer__subscribe_form form-inline"
+          method="post"
+        >
+          <input
+            name="utf8"
+            type="hidden"
+            value="✓"
+          />
+          <input
+            name="authenticity_token"
+            type="hidden"
+            value="pj0JuSmlvEehsiycv4Jpmnz80EhkXOAtf5B+F5W1lYna7Q+AH57LBflwQ59FpaNSm+qyQGVYlpyO3eWhoP5dlw=="
+          />
+          <div
+            className="row"
+            style={
+              Object {
+                "marginBottom": "10px",
+              }
+            }
+          >
+            <div
+              className="col-xs-6"
+            >
+              <input
+                className="form-control"
+                id="_email"
+                name="[email]"
+                placeholder="O teu email"
+                required="required"
+                type="email"
+              />
+            </div>
+            <div
+              className="col-xs-6"
+            >
+              <input
+                className="btn btn-primary"
+                name="commit"
+                type="submit"
+                value="Subscreve"
+              />
+            </div>
+          </div>
+        </form>
+        <p>
+          <a
+            className="social_icons"
+            href="https://www.facebook.com/Rnters-452745608263925"
+          >
+            <i
+              className="fab fa-facebook-f fa-lg"
+            />
+             Like and share
+          </a>
+        </p>
+        <p>
+          <a
+            className="social_icons"
+            href="https://www.instagram.com/rnters.pt/"
+          >
+            <i
+              className="fab fa-instagram fa-lg"
+            />
+             Follow us
+          </a>
+        </p>
+      </div>
+      <div
+        className="col-sm-4 footer_section"
+      >
+        <p>
+          <b>
+            Para mais informações contacta:
+          </b>
+        </p>
+        <div
+          className="row"
+        >
+          <div
+            className="col-sm-2"
+          >
+            <img
+              alt="Logo brand primary"
+              src="https://d3urocn5qjrv7i.cloudfront.net/assets/logo_brand_primary-576ad0b1b49e8bde9dd8c6ffa1ae8384c65f3fb696589c69897463951fcab743.png"
+              style={
+                Object {
+                  "height": "50px",
+                }
+              }
+            />
+          </div>
+          <div
+            className="col-sm-10"
+          >
+            <p>
+              <a
+                data-turbolinks="false"
+                href="/en/items/1960-porto-portugal-alugar-babolat-pure-drive-raquete-tenis?change_locale=true"
+              >
+                English
+              </a>
+              |
+              <a
+                data-turbolinks="false"
+                href="/pt/items/1960-porto-portugal-alugar-babolat-pure-drive-raquete-tenis?change_locale=true"
+              >
+                Português
+              </a>
+            </p>
+            <p>
+              <a
+                className="social_icons"
+                href="mailto:info@rnters.com"
+              >
+                <i
+                  className="fas fa-envelope fa-lg"
+                />
+                info@rnters.com
+              </a>
+            </p>
+            <p>
+              2016-2020 Rnters ©
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+`;
