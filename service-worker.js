@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/rnters-calendar/precache-manifest.386cb2c79c5eefaacc76dd4e8858f7d9.js"
+  "/rnters-calendar/precache-manifest.0ab96df11b3aadaa7de4144a64b8093e.js"
 );
 
 self.addEventListener('message', (event) => {
