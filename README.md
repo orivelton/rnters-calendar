@@ -1,4 +1,4 @@
-#[Rnters Calendar](https://orivelton.github.io/rnters-calendar/)
+# [Rnters Calendar](https://orivelton.github.io/rnters-calendar/)
 
 ## Links
 - https://orivelton.github.io/rnters-calendar/
