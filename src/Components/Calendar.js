@@ -42,16 +42,25 @@ const Calendar = () => {
     return !checkAvailableDays(confirmedInquiries, day);
   }
 
-  const handleErrorRange = () => {
-    setUnavailable(true);
-    setStartDate(null);
-    setEndDate(null);
+  const onDatesChange = ({ startDate, endDate }) => {
+    setUnavailable(false);
+    const { unavailable_periods: unavailableDays } = calendar;
+
+    if(hasBlockedInTheRange(startDate, endDate, unavailableDays)) {
+      setUnavailable(true);
+      setStartDate(null);
+      setEndDate(null);
+    } else {
+      setStartDate(startDate);
+      setEndDate(endDate);
+    }
   }
   
   return (
     <>
       <p>Escolha as datas</p>
       <DateRangePicker
+        initialVisibleMonth={()=>moment()}
         noBorder
         regular
         withPortal
@@ -61,19 +70,10 @@ const Calendar = () => {
         endDateId="2"
         startDatePlaceholderText={'Início'}
         endDatePlaceholderText={'Fim'}
-        onDatesChange={({ startDate, endDate }) => {
-          setUnavailable(false);
-          const { unavailable_periods: unavailableDays } = calendar;
-
-          if(hasBlockedInTheRange(startDate, endDate, unavailableDays)) {
-            handleErrorRange();
-          } else {
-            setStartDate(startDate);
-            setEndDate(endDate);
-          }
-        }}
+        onDatesChange={onDatesChange}
         focusedInput={focusedInput}
         onFocusChange={focusedInput => setFocusedInput(focusedInput)}
+        showClearDates
         displayFormat="DD/MM/YYYY"
         numberOfMonths={1}
         isDayHighlighted={day => isDayHighlighted(day)}
