@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0a9c1770d8ba8d029772308786ee814c",
+    "revision": "73abf31a962c110396ebb8c30533cb9e",
     "url": "/rnters-calendar/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/rnters-calendar/static/css/2.19b7558e.chunk.css"
   },
   {
-    "revision": "5eabcf638e870add9714",
+    "revision": "0db5f74fce6c0d38c8ea",
     "url": "/rnters-calendar/static/css/main.d7143727.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/rnters-calendar/static/js/2.3985e443.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "5eabcf638e870add9714",
-    "url": "/rnters-calendar/static/js/main.ee2f5a66.chunk.js"
+    "revision": "0db5f74fce6c0d38c8ea",
+    "url": "/rnters-calendar/static/js/main.0d5a42d3.chunk.js"
   },
   {
     "revision": "a761ad17f7edfcf67f6a",
