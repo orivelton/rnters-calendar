@@ -16,7 +16,7 @@ const checkUnavailableDays = (unavailableDays, day) => {
 
 const checkAvailableDays = (days, day) => {
   let result = true;
-  days.forEach(item => {
+  days && days.forEach(item => {
     const [start, end] = item;
     const date = formatAvailableDays(day);
     const startDate = formatAvailableDays(start);
