@@ -10,7 +10,7 @@
     "axios": "^0.21.1",
     "bootstrap": "^4.4.1",
     "gh-pages": "^2.2.0",
-    "moment": "^2.24.0",
+    "moment": "^2.29.4",
     "node-sass": "^4.13.1",
     "react": "^16.13.1",
     "react-dates": "^21.8.0",
