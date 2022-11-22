@@ -16,7 +16,7 @@
     "react-dates": "^21.8.0",
     "react-dom": "^16.13.1",
     "react-moment": "^0.9.7",
-    "react-scripts": "3.4.1",
+    "react-scripts": "5.0.1",
     "react-test-renderer": "^16.13.1"
   },
   "scripts": {
